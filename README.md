@@ -1,16 +1,16 @@
-Carpool-Management-System
+Carpool
 ===
 
-Car-Pooling Management System (CMS) is intended to help the user to share car rides with other users traveling on the same route. The user may intend to share his car or else ride with another user who is willing to share.
+CarPool is intended to help the user to share car rides with other users traveling on the same route. The user may intend to share his car or else ride with another user who is willing to share.
 
-The carpooling software is designed and developed in Django framework using GoogleMaps API.
+The carpooling app is designed and developed in Django framework using GoogleMaps API.
 
-CMS is aimed toward a person who is a frequent traveller and is looking for cheap and comfortable mode of transport. It will prove beneficial for office commuters who are headed on a common route and are willing to share the travel cost. Anyone can opt to provide a drive, thus reducing his/her expense. 
+Carpool is aimed toward a person who is a frequent traveller for short fixed distance or long distance travelers and also looking for cheap and comfortable mode of transport. It will prove beneficial for office commuters who are headed on a common route and are willing to share the travel cost. Anyone can opt to provide a drive, thus reducing his/her expense. 
 
 
 
 :::info
-Github Repo: **[Carpool-Management-System](https://github.com/goel97/Car-Pooling-Management)**
+Github Repo: **[Carpool](https://github.com/virenderid/Car-Pool.git)**
 :::
 ## Table of Contents
 
@@ -32,13 +32,16 @@ You need to install:
 Once django is installed, all you need to do is clone this repository.
 
 ```bash
-$ git clone https://github.com/goel97/Car-Pooling-Management.git
+$ git clone https://github.com/virenderid/Car-Pool.git
 ```
 
 After this, enter the following commands to run the webserver:
 ```bash
-$ python manage.py migrate
+$ python manage.py migrate 
 $ python manage.py runserver
+or 
+$ python3 manage.py migrate 
+$ python3 manage.py runserver
 ```
 
 
@@ -349,14 +352,6 @@ This is the overall data flow diagram of the Car-pool.
 
 ![Factoring_ride_processing(FACTORING-CENTRAL-TRANSFORM).jpg](https://i.imgur.com/gd1L3Kz.jpg)
 
----
-
-## Authors
-
-* [Abhishek Pawar](https://github.com/thehiddencoder)
-* [Siddharth Goel](https://github.com/goel97)
-* [Saahil Sirowa](https://github.com/ssirowa14)
-* [Siddharth Shrivastava](https://github.com/sid20071997)
 
 ---
 ## Appendix and FAQ
