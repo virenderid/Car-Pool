@@ -1,7 +1,7 @@
 Carpool
 ===
 
-Car-Pool is intended to help the user to share car rides with other users traveling on the same route. The user may intend to share his car or else ride with another user who is willing to share.
+CarPool is intended to help the user to share car rides with other users traveling on the same route. The user may intend to share his car or else ride with another user who is willing to share.
 
 The carpooling app is designed and developed in Django framework using GoogleMaps API.
 
