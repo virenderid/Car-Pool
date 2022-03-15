@@ -1,6 +1,7 @@
 from django.db import models
 from django.db import transaction
 # Create your models here.
+
 class ride(models.Model):
 	userId = models.CharField(max_length = 200 , primary_key=True)
 	pickUp = models.CharField(max_length = 200)
