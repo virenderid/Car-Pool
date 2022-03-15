@@ -37,8 +37,11 @@ $ git clone https://github.com/virenderid/Car-Pool.git
 
 After this, enter the following commands to run the webserver:
 ```bash
-$ python manage.py migrate
+$ python manage.py migrate 
 $ python manage.py runserver
+or 
+$ python3 manage.py migrate 
+$ python3 manage.py runserver
 ```
 
 
