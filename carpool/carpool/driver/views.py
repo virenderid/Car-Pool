@@ -8,8 +8,8 @@ from django.http import JsonResponse
 from rider.models import ride
 from django.core import serializers
 
-import numpy as np
-import googlemaps 
+#import numpy as np
+#import googlemaps 
 import json
 
 
