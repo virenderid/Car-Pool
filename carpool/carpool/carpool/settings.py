@@ -40,6 +40,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    #2fa
+    #'admin_two_factor.apps.TwoStepVerificationConfig',
+    #'django.contrib.admin',
 ]
 
 MIDDLEWARE = [
