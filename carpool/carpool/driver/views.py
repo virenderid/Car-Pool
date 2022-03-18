@@ -9,7 +9,7 @@ from rider.models import ride
 from django.core import serializers
 
 import numpy as np
-#import googlemaps 
+import googlemaps 
 import json
 
 
@@ -40,7 +40,7 @@ def searchRider(request):
 	rideList = []
 	print(riderSet)
 	print("####################----------------------------------------------------------------------------------------")
-	gmaps = googlemaps.Client(key='AIzaSyB64EM3P7XmfNlop7aUjzacIXAQJVAMjkA')
+	gmaps = googlemaps.Client(key='AIzaSyCx-DDQx2P_naOOay5C6DdETWHakl8fGCs')
 	print("@@@@@@@@@@@@@@@@@@@@@----------------------------------------------------------------------------------------")
 	driverRoutePoints = gmaps.directions((float(liveLat) ,float(liveLong)), driver_dest, mode="driving")
 	# print(len(driverRoutePoints[0]))
