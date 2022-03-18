@@ -5,8 +5,8 @@ from django.shortcuts import render , get_object_or_404
 from django.views import generic
 from django.views.generic.edit import CreateView , UpdateView , DeleteView
 from .models import ride
-#import numpy as np
-#import googlemaps 
+import numpy as np
+import googlemaps 
 import json
 
 from django.core import serializers
