@@ -306,54 +306,7 @@ Function: endRide()
 
 ```
 
----
-## Software Architecture
 
-The CMS developed here is a web application. It has three layers.
-* The most external of them is the View Layer, which is the visible part of the application, the one that interacts with the user. 
-* The layer in the middle is the Business Logic Layer, which serves as an intermediate between the View (or presentation) and the innermost layer, which is the Data Layer. 
-* The Data Layer one is where all the data used by the application is stored. 
-
-
-![Arhcitecture](https://i.imgur.com/NYTazpo.png)
-
----
-
-
-## Software Data Flow Diagram
-
-This is the overall data flow diagram of the Car-pool. 
-* It starts with the UserId and Password being accepted as input for authentication after validating them. The user data then flows to a Drive/Ride option.
-* If the driver is chosen, there is flow to form validation. Once the drive data is obtained, we pass to Ride accept/reject. 
-* On the rider side, the user data is flown to book Ride followed by intervention of Map api usage (to get location/pickup details). 
-* The interaction between (Ride Accept/Reject) and (Ride Processing) decides the final Ride followed by payment.
-
-
----
-
-![DFD](https://i.imgur.com/VVbBDVu.jpg)
-
-
-
----
-
-![Factoring-Input.jpg](https://i.imgur.com/iERts5Q.jpg)
-
-
-
----
-
-
-![First-Level-Factoring.jpg](https://i.imgur.com/FJntwcp.jpg)
-
-
-
----
-
-![Factoring_ride_processing(FACTORING-CENTRAL-TRANSFORM).jpg](https://i.imgur.com/gd1L3Kz.jpg)
-
-
----
 ## Appendix and FAQ
 
 :::info
