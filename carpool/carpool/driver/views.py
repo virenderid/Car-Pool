@@ -74,7 +74,7 @@ def searchRider(request):
 			expTime = gmaps.distance_matrix(r.pickUp , (liveLat, liveLong))['rows'][0]['elements'][0]["duration"]["text"]
 			# print(expTime , "-------------------------------------------")
 			# cost = cost/1000.0
-			# cost = cost*10
+			# cost = cost*100
 			# r.cost = cost
 			# r.save()
 			# print("the distance is " + str(my_dist))
@@ -82,7 +82,7 @@ def searchRider(request):
 				flag = False
 				for point in driverRoutePoints:
 					my_dist = gmaps.distance_matrix(point , r.destination)['rows'][0]['elements'][0]["distance"]["value"]
-					my_dist = my_dist/1000.0
+					my_dist = my_dist/10000.0
 					if my_dist < 60:
 						flag = True
 						break
@@ -97,8 +97,7 @@ def searchRider(request):
 	return JsonResponse({'rideList': rideList})
 	#algo rider search 
 
-	#[{"model": "rider.ride", "pk": "lodhuji", "fields": {"pickUp": "Bhopal Railway Station, Bajariya, Navbahar Colony, Bhopal, Madhya Pradesh, India", "destination": "New Delhi, Delhi, India", "complete": false, "status": false, "cost": 0}}]
-
+	
 def acceptRider(request):
 	print(request)
 	print("***************************")
